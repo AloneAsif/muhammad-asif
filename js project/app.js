@@ -1,157 +1,224 @@
-//   Chap 17 - 20    Arrays and loops....
+// Question no 1
 
-// Question no 1....
+// Prompt the user for input
+var cityName = prompt("Enter a city name:");
 
-var emptyMultiDimArray = [[]];
-
-// Question no 2...
-
-
-var matrix = [
-    [1, 2, 3, 5],
-    [4, 5, 6, 6],
-    [7, 8, 9, 9]
-  ];
-
-  console.log(matrix)
-
-//   Question no 3...
-
-
-for(var i = 0; i<=10 ; i++){
-
-    document.write(i, "<br> <strong>")
-
+// Check if the input city name is "Karachi" (case-insensitive)
+if (cityName === "karachi") {
+    console.log("Welcome to the city of lights");
+} else {
+    console.log("Welcome to " + cityName); // If it's not Karachi, just welcome to the entered city
 }
 
 
-// Question no 4...
+// Question no 2
 
-let table = parseInt(prompt("Enter your table;"));
-let tablelenght = parseInt(prompt("Enter Table length..."))
+// Prompt the user for input
+var gender = prompt("Enter your gender (Male or Female):");
 
-for(var i = 1; i<=tablelenght; i++){
-    document.write(table + " X " + i + " = " + table * i +"<br>" )
-}
-
-
-// Question no 5...
-
-
-var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
-
-for( var i = 0; i <= fruits.length; i++){
-    document.write(fruits[i] + "<BR>" )
-    document.write("Element at index: " + i  + "<BR>" )
+// Check the gender and provide the appropriate greeting
+if (gender === "male") {
+    alert("Good Morning Sir.");
+} else if (gender === "female") {
+    console.log("Good Morning Ma'am.");
+} else {
+    console.log("Good Morning!"); // If gender is neither male nor female, provide a generic greeting
 }
 
 
 
-// Question no 6....
-
-// Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-function countingSeries() {
-    let series = [];
-    for (let i = 1; i <= 15; i++) {
-      series.push(i);
-    }
-    return series.join(', ');
-  }
-  
-  // Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
-  function reverseCountingSeries() {
-    let series = [];
-    for (let i = 10; i >= 1; i--) {
-      series.push(i);
-    }
-    return series.join(', ');
-  }
-  
-  // Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
-  function evenSeries() {
-    let series = [];
-    for (let i = 0; i <= 20; i += 2) {
-      series.push(i);
-    }
-    return series.join(', ');
-  }
-  
-  // Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
-  function oddSeries() {
-    let series = [];
-    for (let i = 1; i <= 19; i += 2) {
-      series.push(i);
-    }
-    return series.join(', ');
-  }
-  
-  // Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
-  function customSeries() {
-    let series = [];
-    for (let i = 1; i <= 10; i++) {
-      series.push(2 * i + 'k');
-    }
-    return series.join(', ');
-  }
-  
-  console.log("Counting: " + countingSeries());
-  console.log("Reverse counting: " + reverseCountingSeries());
-  console.log("Even: " + evenSeries());
-  console.log("Odd: " + oddSeries());
-  console.log("Series: " + customSeries());
-  
+// Question no 3
 
 
-//   Question no 7...
 
-// ?????
+// Prompt the user for input
+var signalColor = prompt("Enter the color of the traffic signal (Red, Yellow, Green):");
 
+// Convert the input to lowercase for case-insensitive comparison
+signalColor = signalColor.toLowerCase();
 
-// Question no 8....
+// Check the signal color and provide the appropriate message
 
-// Define the array
-const A = [24, 53, 78, 91, 12];
-
-// Initialize a variable to store the maximum value, starting with the first element of the array
-let max = A[0];
-
-// Iterate through the array to find the maximum value
-for (let i = 1; i < A.length; i++) {
-  if (A[i] > max) {
-    max = A[i];
-  }
+if (signalColor === "red"){
+    console.log("Must stop")
+}
+if (signalColor === "yellow"){
+    console.log("Must move")
+}
+if (signalColor === "green"){
+    console.log("Must start")
 }
 
-// Display the maximum value
-console.log("The largest number in the array is: " + max);
 
 
-// Question no 9...
+// Question no 4.
 
-// Define the array
-const B = [24, 53, 78, 91, 12];
+// Prompt the user for input
+var remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in liters):"));
 
-// Initialize a variable to store the minimum value, starting with the first element of the array
-let min = B[0];
-
-// Iterate through the array to find the minimum value
-for (let i = 1; i < B.length; i++) {
-  if (B[i] < min) {
-    min = B[i];
-  }
+// Check if the remaining fuel is less than 0.25 liters
+if (remainingFuel < 0.25) {
+    console.log("Please refill the fuel in your car");
+} else {
+    console.log("You have enough fuel in your car. Drive safely!");
 }
 
-// Display the minimum value
-console.log("The smallest number in the array is: " + min);
 
-// Question no 10...
+// Question no 6.
 
-// Loop from 1 to 20 (1 to 100 divided by 5)
-for (let i = 1; i <= 20; i++) {
-    // Calculate the multiple of 5
-    const multipleOf5 = i * 5;
-    
-    // Print the multiple of 5
-    console.log(multipleOf5);
-  }
+// Prompt the user for input
+var subject1Marks = parseFloat(prompt("Enter marks obtained in Subject 1:"));
+var subject2Marks = parseFloat(prompt("Enter marks obtained in Subject 2:"));
+var subject3Marks = parseFloat(prompt("Enter marks obtained in Subject 3:"));
+var totalMarks = parseFloat(prompt("Enter total marks for all subjects:"));
+
+// Calculate the total marks obtained
+var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+
+// Calculate the percentage
+var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+// Calculate the grade based on the percentage
+var grade = "";
+if (percentage >= 90) {
+    grade = "A+";
+} else if (percentage >= 80) {
+    grade = "A";
+} else if (percentage >= 70) {
+    grade = "B";
+} else if (percentage >= 60) {
+    grade = "C";
+} else if (percentage >= 50) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+
+// Provide remarks based on the grade
+var remarks = "";
+if (grade === "A+") {
+    remarks = "Excellent!";
+} else if (grade === "A") {
+    remarks = "Very Good!";
+} else if (grade === "B") {
+    remarks = "Good!";
+} else if (grade === "C") {
+    remarks = "Satisfactory.";
+} else if (grade === "D") {
+    remarks = "Needs Improvement.";
+} else {
+    remarks = "Fail. Please try again.";
+}
+
+// Display the results
+document.write("Total Marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
+document.write("Percentage: " + percentage + "%<br>");
+document.write("Grade: " + grade + "<br>");
+document.write("Remarks: " + remarks);
+
+
+// Qustion no 7.
+
+// Generate a random secret number between 1 and 10
+const secretNumber = 8
+
+// Prompt the user to guess the secret number
+const userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+// Check if the user's guess is correct or close enough
+if (userGuess === secretNumber) {
+  console.log("Bingo! Correct answer");
+} else if (userGuess === secretNumber - 1 || userGuess === secretNumber + 1) {
+  console.log("Close enough to the correct answer");
+} else {
+  console.log("Sorry, that's not correct. The secret number was " + secretNumber);
+}
+
+
+// Question no 8.
+
+// Prompt the user to enter a number
+const Number = parseInt(prompt("Enter a number:"));
+
+// Check if the number is divisible by 3
+if (Number % 3 === 0) {
+  console.log(Number + " is divisible by 3.");
+ 
+} else {
+  console.log(userNumber + " is not divisible by 3.");
   
+}
+
+
+// Question no 9
+
+var userNumber = parseInt(prompt("Enter your number to check wherter even or odd...."))
+
+if (userNumber % 2 === 0){
+    console.log("Your entered number is even.")
+}
+else{
+    console.log("Your number is odd..")
+}
+
+// Question no 10
+
+var temperature = parseInt(prompt("Please enter temperature number..."))
+
+if (temperature > 40 ){
+    console.log("It is Too Hot Outside.")
+}
+
+else if (temperature > 30 ) 
+{
+    console.log("The Weather today is Normal..")
+}
+else if (temperature > 20 ) 
+{
+    console.log("Today’s Weather is cool..")
+}
+else if (temperature > 10 ) 
+{
+    console.log("OMG! Today’s weather is so Cool.")
+}
+
+
+// Question no 11.
+
+
+// Prompt the user to enter the first number
+const firstNumber = parseFloat(prompt("Enter the first number:"));
+
+// Prompt the user to enter the second number
+const secondNumber = parseFloat(prompt("Enter the second number:"));
+
+// Prompt the user to enter the operation (+, -, *, /, %)
+const operation = prompt("Enter the operation (+, -, *, /, %):");
+
+// let result;
+
+// Perform the calculation based on the selected operation
+if (operation === "+") {
+  result = firstNumber + secondNumber;
+} else if (operation === "-") {
+  result = firstNumber - secondNumber;
+} else if (operation === "*") {
+  result = firstNumber * secondNumber;
+} else if (operation === "/") {
+  if (secondNumber === 0) {
+    alert("Error: Division by zero is not allowed.");
+  } else {
+    result = firstNumber / secondNumber;
+  }
+} else if (operation === "%") {
+  result = firstNumber % secondNumber;
+} else {
+  alert("Invalid operation. Please enter +, -, *, /, or %.");
+}
+
+// Display the result to the user
+if (result !== undefined) {
+  console.log(`Result: ${firstNumber} ${operation} ${secondNumber} = ${result}`);
+  alert(`Result: ${firstNumber} ${operation} ${secondNumber} = ${result}`);
+}

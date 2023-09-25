@@ -1,224 +1,312 @@
-// Question no 1
 
-// Prompt the user for input
-var cityName = prompt("Enter a city name:");
-
-// Check if the input city name is "Karachi" (case-insensitive)
-if (cityName === "karachi") {
-    console.log("Welcome to the city of lights");
-} else {
-    console.log("Welcome to " + cityName); // If it's not Karachi, just welcome to the entered city
-}
+//         Chapter 21 (Changing Case)
 
 
-// Question no 2
+//  Question no 1...
 
-// Prompt the user for input
-var gender = prompt("Enter your gender (Male or Female):");
-
-// Check the gender and provide the appropriate greeting
-if (gender === "male") {
-    alert("Good Morning Sir.");
-} else if (gender === "female") {
-    console.log("Good Morning Ma'am.");
-} else {
-    console.log("Good Morning!"); // If gender is neither male nor female, provide a generic greeting
-}
+userInput = "Asif";
+var allLower = userInput.toLowerCase();
 
 
+// Question no 2....
 
-// Question no 3
+x = "pakistan"
 
+x = x.toLowerCase();
 
+// Question no 3....
 
-// Prompt the user for input
-var signalColor = prompt("Enter the color of the traffic signal (Red, Yellow, Green):");
+y = "muhammad"
 
-// Convert the input to lowercase for case-insensitive comparison
-signalColor = signalColor.toLowerCase();
+y = y.toUpperCase();
 
-// Check the signal color and provide the appropriate message
+// Question no 4....
 
-if (signalColor === "red"){
-    console.log("Must stop")
-}
-if (signalColor === "yellow"){
-    console.log("Must move")
-}
-if (signalColor === "green"){
-    console.log("Must start")
-}
+var originalVariable = "Muhammad Asif"; 
+var newVariable = originalVariable.toLowerCase();
 
 
-
-// Question no 4.
-
-// Prompt the user for input
-var remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in liters):"));
-
-// Check if the remaining fuel is less than 0.25 liters
-if (remainingFuel < 0.25) {
-    console.log("Please refill the fuel in your car");
-} else {
-    console.log("You have enough fuel in your car. Drive safely!");
-}
+// Question no 5....
 
 
-// Question no 6.
+var myArray = ["Hello","World","Asif"]; 
+var newArrayElement = myArray[0].toLowerCase();
 
-// Prompt the user for input
-var subject1Marks = parseFloat(prompt("Enter marks obtained in Subject 1:"));
-var subject2Marks = parseFloat(prompt("Enter marks obtained in Subject 2:"));
-var subject3Marks = parseFloat(prompt("Enter marks obtained in Subject 3:"));
-var totalMarks = parseFloat(prompt("Enter total marks for all subjects:"));
+// Question no 6....
 
-// Calculate the total marks obtained
-var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+var myString = "Muhammad Asif"; 
+var uppercaseString = myString.toUpperCase();
+alert(uppercaseString);
 
-// Calculate the percentage
-var percentage = (totalObtainedMarks / totalMarks) * 100;
+// Question no 7....
 
-// Calculate the grade based on the percentage
-var grade = "";
-if (percentage >= 90) {
-    grade = "A+";
-} else if (percentage >= 80) {
-    grade = "A";
-} else if (percentage >= 70) {
-    grade = "B";
-} else if (percentage >= 60) {
-    grade = "C";
-} else if (percentage >= 50) {
-    grade = "D";
-} else {
-    grade = "F";
-}
-
-// Provide remarks based on the grade
-var remarks = "";
-if (grade === "A+") {
-    remarks = "Excellent!";
-} else if (grade === "A") {
-    remarks = "Very Good!";
-} else if (grade === "B") {
-    remarks = "Good!";
-} else if (grade === "C") {
-    remarks = "Satisfactory.";
-} else if (grade === "D") {
-    remarks = "Needs Improvement.";
-} else {
-    remarks = "Fail. Please try again.";
-}
-
-// Display the results
-document.write("Total Marks: " + totalMarks + "<br>");
-document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
-document.write("Percentage: " + percentage + "%<br>");
-document.write("Grade: " + grade + "<br>");
-document.write("Remarks: " + remarks);
+var cityName = "kaRacHi";
+var capitalizedName = cityName.charAt(0).toUpperCase() + cityName.slice(1).toLowerCase();
+console.log(capitalizedName);
 
 
-// Qustion no 7.
+//      Chapter 22 - 25 (Strings)
 
-// Generate a random secret number between 1 and 10
-const secretNumber = 8
-
-// Prompt the user to guess the secret number
-const userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
-
-// Check if the user's guess is correct or close enough
-if (userGuess === secretNumber) {
-  console.log("Bingo! Correct answer");
-} else if (userGuess === secretNumber - 1 || userGuess === secretNumber + 1) {
-  console.log("Close enough to the correct answer");
-} else {
-  console.log("Sorry, that's not correct. The secret number was " + secretNumber);
-}
+// Question no 1....
 
 
-// Question no 8.
+var words = "captain";
 
-// Prompt the user to enter a number
-const Number = parseInt(prompt("Enter a number:"));
+words = words.slice(1,3)
 
-// Check if the number is divisible by 3
-if (Number % 3 === 0) {
-  console.log(Number + " is divisible by 3.");
- 
-} else {
-  console.log(userNumber + " is not divisible by 3.");
-  
-}
+console.log(words)
 
 
-// Question no 9
+// Question no 2....
 
-var userNumber = parseInt(prompt("Enter your number to check wherter even or odd...."))
+var cityName = "Karachi";
+var characterCount = cityName.length;
 
-if (userNumber % 2 === 0){
-    console.log("Your entered number is even.")
-}
-else{
-    console.log("Your number is odd..")
-}
-
-// Question no 10
-
-var temperature = parseInt(prompt("Please enter temperature number..."))
-
-if (temperature > 40 ){
-    console.log("It is Too Hot Outside.")
-}
-
-else if (temperature > 30 ) 
-{
-    console.log("The Weather today is Normal..")
-}
-else if (temperature > 20 ) 
-{
-    console.log("Today’s Weather is cool..")
-}
-else if (temperature > 10 ) 
-{
-    console.log("OMG! Today’s weather is so Cool.")
-}
+// Question no 3...
 
 
-// Question no 11.
+var animal = "elephant";
+
+var seg = animal.slice(2,6)
+
+console.log(seg)
+
+// Question no 4...
 
 
-// Prompt the user to enter the first number
-const firstNumber = parseFloat(prompt("Enter the first number:"));
+var inputString = "MUhammad asif";
+var characterCount = inputString.length;
 
-// Prompt the user to enter the second number
-const secondNumber = parseFloat(prompt("Enter the second number:"));
+console.log("Muhammad asif word has; " + characterCount + " Lenghts.." )
 
-// Prompt the user to enter the operation (+, -, *, /, %)
-const operation = prompt("Enter the operation (+, -, *, /, %):");
+// Question no 5...
 
-// let result;
+var myString = "Asif khadim"; 
+var characterCount = myString.length;
+var newString = myString.slice(1, -3); 
 
-// Perform the calculation based on the selected operation
-if (operation === "+") {
-  result = firstNumber + secondNumber;
-} else if (operation === "-") {
-  result = firstNumber - secondNumber;
-} else if (operation === "*") {
-  result = firstNumber * secondNumber;
-} else if (operation === "/") {
-  if (secondNumber === 0) {
-    alert("Error: Division by zero is not allowed.");
-  } else {
-    result = firstNumber / secondNumber;
+console.log(newString)
+
+
+// Question no 6...
+var text = "To be or not to be.";
+var indx = text.indexOf("be");
+console.log(indx)
+
+// Question no 7...
+
+
+var text = "To be or not to be.";
+var indx = text.lastIndexOf("be");
+
+console.log(indx)
+
+
+// Question no 8...
+
+var text = "You can go wherever you want to go.";
+var indx = text.lastIndexOf("go");
+indx = text.lastIndexOf("go", indx - 1);
+console.log(indx)
+
+
+// Question no 9...
+
+var indexNum = 23432;
+var yourString = "asif"
+
+if (indexNum >= 0 && indexNum < yourString.length) {
+    
   }
-} else if (operation === "%") {
-  result = firstNumber % secondNumber;
-} else {
-  alert("Invalid operation. Please enter +, -, *, /, or %.");
+
+//   QUestion no 10..
+
+
+var myString = "abcde";
+var characterAtIndex2 = myString.charAt(2);
+console.log(characterAtIndex2); 
+
+// Question no 11...
+
+
+var text = "YourStringHere"; // Replace with your actual string
+var cha = text.charAt(9); // Get the 10th character (index 9)
+
+// question no 12...
+
+var str = "YourStringHere"; // Replace with your actual string
+var x = str.charAt(str.length - 1); // Get the last character
+
+// Question no 13...
+
+var input = "YourStringHere"; // Replace with your actual string
+var cha = input.charAt(4); // Get the 5th character (index 4)
+
+// Question no 14...
+
+if (yourString.length >= 3 && yourString.charAt(2) === 'YourCharacter') {
+  }
+
+//   Question no 15...
+
+var reply = "no, I don't know. no, I'm not sure.";
+var characterArray = []; // Declare an empty array to hold characters
+
+for (var i = 0; i < reply.length; i++) {
+  characterArray.push(reply.charAt(i)); // Push each character to the array
 }
 
-// Display the result to the user
-if (result !== undefined) {
-  console.log(`Result: ${firstNumber} ${operation} ${secondNumber} = ${result}`);
-  alert(`Result: ${firstNumber} ${operation} ${secondNumber} = ${result}`);
+var revisedReply = reply.replace("no", "yes"); // Replace the first "no" with "yes"
+
+// Question no 16...
+
+var str = "Your string with 1 and more 1s.";
+var newStr = str.replace("1", "one");
+
+console.log(newStr)
+
+
+// Question no 17...
+
+var y = x.replace(/a/g, "z");
+
+//      Chapter 26 (Rounding Numbers)
+
+// Question no 1...
+
+var roundedNumber = Math.round(5.7);
+console.log(roundedNumber)
+
+// Question no 2...
+
+var roundNum = Math.ceil(7.6);
+
+console.log(roundNum);
+
+
+// Question no 3...
+
+var roundNum = Math.floor(20.6);
+console.log(roundNum)
+
+// Question no 4...
+
+var yourNumber = 3.14159; // Replace with your actual number
+var roundedNumber = Math.round(yourNumber);
+console.log(yourNumber)
+
+// Question no 5...
+
+var roundedValue = Math.round(0.5);
+console.log(roundedValue)
+
+//          Chapter 27 (Random Numbers)
+
+
+
+
+// Question no 1...
+
+var randomNumber = Math.floor(Math.random() * 50) + 1;
+
+console.log(randomNumber);
+
+// Question no 2...
+
+var randomValue = Math.random();
+
+console.log(randomNumber);
+
+// Question no 3..
+
+var diceRoll = Math.floor(Math.random() * 6) + 1;
+
+console.log("your dice roll is; " + diceRoll  )
+
+// Question no 4...
+var coinToss = Math.random() < 0.5 ? "head" : "tail";
+console.log(coinToss)
+
+
+
+// Chapter 28, 29 (Converting Strings)
+
+
+// Question no 1....
+
+var str = "42";
+var integer = parseInt(str);
+
+console.log(integer)
+
+// Question no 2...
+
+var str = "3.14";
+var floatingPoint = parseFloat(str);
+
+console.log(floatingPoint)
+
+// Question no 3...
+
+
+var str = "42";
+if (!isNaN(str)) {
+  // Conversion to a number is possible
+  var number = parseFloat(str);
 }
+
+// Question no 4...
+
+var num = 42;
+var str1 = num.toString();
+var str2 = num + "";
+
+// Question no 5...
+
+
+var str = "3.14";
+var integer = parseInt(str); // This will result in 3
+
+// Question no 6
+
+//      Chapter 30 (Controlling the length of  decimals)
+
+// Question no 1...
+
+var num = 12.34567;
+var newNum = num.toFixed(4).toString();
+console.log(newNum)
+
+
+// Question no 2...
+
+var num = 9.87654;
+num = parseFloat(num.toFixed(2));
+
+console.log(num)
+
+// Question no 3...
+
+
+
+if (num.toFixed(2).toString().length > 4) {
+    // Rest of your code goes here if the condition is met.
+  }
+
+
+// Question no 4...
+var largeNumber = 123.456789;
+var roundedString = largeNumber.toFixed(2).toString();
+alert(roundedString);
+
+// Question no 5..
+
+
+
+
+
+
+
+
+
+

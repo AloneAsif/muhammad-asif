@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event Example</title>
+</head>
+<body>
+
+
+
+<button id="clickMeButton">Click Me!</button>
+
+<script>
+    
+    var button = document.getElementById("clickMeButton");
+
+   
+    button.addEventListener("click", function() {
+       
+        console.log("Clicked");
+    });
+</script>
+
+
+<!-- Question no 3 -->
+
+
+<br>
+
+<a href="#" id="hoverLink">Hover over me</a>
+
+<!-- Include a JavaScript script -->
+<script>
+    // Get a reference to the link element by its id
+    var link = document.getElementById("hoverLink");
+
+    // Store the original link color
+    var originalColor = link.style.color;
+
+    // Add a mouseover event listener
+    link.addEventListener("mouseover", function() {
+        // Change the link color on hover
+        link.style.color = "red";
+    });
+
+    // Add a mouseout event listener
+    link.addEventListener("mouseout", function() {
+        // Restore the original link color when the mouse moves away
+        link.style.color = originalColor;
+    });
+</script>
+
+<br>
+
+
+<!-- Qusetion no 4.... -->
+
+
+
+<!-- Qusetion no 5.... -->
+
+
+<a href="#" id="openNewWindowLink">Open New Window</a>
+
+<script>
+    // Get a reference to the link element by its id
+    var openNewWindowLink = document.getElementById("openNewWindowLink");
+
+    // Add a click event listener to the link
+    openNewWindowLink.addEventListener("click", function(event) {
+        // Prevent the default behavior of the link
+        event.preventDefault();
+
+        // Open a new window when the link is clicked
+        window.open("https://www.google.com", "_blank");
+    });
+</script>
+
+
+<!-- Question no 6... -->
+
+<br>
+<br>
+<br>
+
+<button
+    id="hoverButton"
+    onmouseover="this.style.backgroundColor='green';"
+    onmouseout="this.style.backgroundColor='red';"
+>
+    Hover over me
+</button>
+
+
+<!-- Q -->
+
+
+
+<button
+    id="playSoundButton"
+    onclick="playSound('sound.mp3');"
+>
+    Click to Play Sound
+</button>
+
+<!-- Include the sound file (adjust the 'src' attribute as needed) -->
+<audio id="sound" src="sound.mp3"></audio>
+
+<script>
+    // Function to play the sound
+    function playSound(soundFileName) {
+        var sound = document.getElementById("sound");
+        sound.play();
+    }
+</script>
+
+
+
+<div
+    id="mouseoverElement"
+    onmouseover="showAlert()"
+    style="width: 200px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px; cursor: pointer;"
+>
+    Hover over me
+</div>
+
+<div
+    id="hideOnMouseout"
+    onmouseout="hideElement()"
+    style="width: 200px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px; cursor: pointer;"
+>
+    Move the mouse out to hide me
+</div>
+
+<a href="#" id="openNewWindowLink" onclick="openNewWindow();">Open New Window</a>
+
+
+<input type="text" id="userInput" placeholder="Enter something">
+<button onclick="readUserInput()">Read Input</button>
+
+<script>
+    function readUserInput() {
+        var userInput = document.getElementById("userInput").value;
+        console.log("User Input: " + userInput);
+    }
+</script>
+
+<input type="text" id="userInput" placeholder="Enter something">
+<button onclick="readUserInput()">Read Input</button>
+
+<script>
+    function readUserInput() {
+        var userInput = document.getElementById("userInput").value;
+        console.log("User Input: " + userInput);
+    }
+</script>
+
+<input type="text" id="userInput" placeholder="Enter something">
+<button onclick="readUserInput()">Read Input</button>
+
+<script>
+    function readUserInput() {
+        var userInput = document.getElementById("userInput").value;
+        console.log("User Input: " + userInput);
+    }
+</script>
+
+<input type="text" id="userInput" placeholder="Enter something">
+<button onclick="readUserInput()">Read Input</button>
+
+<script>
+    function readUserInput() {
+        var userInput = document.getElementById("userInput").value;
+        console.log("User Input: " + userInput);
+    }
+</script>
+
+<input type="text" id="statusField">
+<button onclick="setStatus()">Set Status</button>
+
+<script>
+    function setStatus() {
+        var married = false; // Change this value based on user input
+        var statusField = document.getElementById("statusField");
+
+        if (!married) {
+            statusField.value = "available";
+        } else {
+            statusField.value = ""; // Clear the field if married
+        }
+    }
+</script>
+
+<form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br>
+    <button type="button" onclick="validateForm()">Submit</button>
+</form>
+
+<p id="validationMessage"></p>
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
+

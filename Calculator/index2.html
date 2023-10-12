@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="button">
+
+            <div class="screen" id="screen">0</div>
+
+
+                <button class="Number Button" onclick="clearAll()" >AC</button>
+                <!-- <input type="button" value="AC" onclick="clearScreen()" id="btn" /> -->
+                <button class="Number Button" onclick="clearEntry()" >Ce</button>
+              
+
+                <button class="Number Button" onclick="apearNumber('%')" >%</button>
+                <button class="Number operator" onclick="apearOperator('*')" >X</button>
+                
+                <button class="Number Button" onclick="apearNumber(7)" >7</button>
+                <button class="Number Button" onclick="apearNumber(8)" >8</button>
+                <button class="Number Button" onclick="apearNumber(9)" >9</button>
+                <button class="Number operator" onclick="apearOperator('+')" >+</button>
+         
+                <button class="Number Button" onclick="apearNumber(4)" >4</button>
+                <button class="Number Button" onclick="apearNumber(5)" >5</button>
+                <button class="Number Button" onclick="apearNumber(6)" >6</button>
+                <button class="Number operator" onclick="apearOperator('-')" >-</button>
+          
+                <button class="Number Button" onclick="apearNumber(1)" >1</button>
+                <button class="Number Button" onclick="apearNumber(2)" >2</button>
+                <button class="Number Button" onclick="apearNumber(3)" >3</button>
+                <button class="Number operator" onclick="apearOperator('*')" >*</button>
+          
+                <button class="Number Button" onclick="apearNumber(0)" >0</button>
+                <button class="Number operator" onclick="apearNumber('.')" >.</button>
+                <button class="Number operator" onclick="calculate('=')" >=</button>
+                <button class="Number operator" onclick="apearOperator('/')" >/</button>
+          
+
+            
+        </div>
+
+    </div>
+    
+
+
+
+<script src="app2.js"></script>
+</body>
+</html>

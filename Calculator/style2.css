@@ -1,0 +1,65 @@
+
+
+.container {
+    box-shadow: 5px 5px 10px black;
+    width: 320px ;
+    height: auto;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    background-image: url('https://cdn.pixabay.com/photo/2023/07/31/14/13/background-8161088_640.jpg');
+    
+  }
+
+.screen{
+    font-size: 30px;
+    box-shadow: 2px 2px 2px white;
+    /* background-image: url('https://cdn.pixabay.com/photo/2023/03/16/08/51/flowers-7856224_640.jpg'); */
+    background-size:cover;
+    width: auto;
+    height: 80px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    overflow:auto;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 80px;
+    /* color: white; */
+ 
+}
+
+
+.Button{
+    box-shadow: 2px 2px 2px white;
+    width: 65px;
+    height: 60px;
+    border-radius: 20px;
+    margin: 6px;
+    font-size: 30px;
+    color: aqua;
+    background-color: black;
+}
+
+
+.operator{
+    width: 65px;
+    height: 60px;
+    border-radius: 20px;
+    margin: 6px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+}
+
+.Number:hover{
+    opacity: 0.7;
+    cursor:pointer ;
+    background-color: white;
+    color: black;
+}
+.Button:active{
+    background-color: aqua;
+}
